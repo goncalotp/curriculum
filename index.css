@@ -1,0 +1,28 @@
+body{
+    background-color: #262b2f;
+}
+
+h1,h3{
+    color: white;
+}
+
+.container {
+    margin-top: 70px;
+    margin-left: 50px;
+    width:100%;
+}
+
+.nameTitle {
+    font-size: 100px;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.professionalTitle{
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.profilePic {
+  text-align: right;
+  width: 150px
+}
+
