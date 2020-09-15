@@ -23,6 +23,11 @@
       href="https://fonts.googleapis.com/css2?family=Hind+Vadodara&display=swap"
       rel="stylesheet"
     />
+     <!-- Resources -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+
+     
     <title>Curriculo</title>
   </head>
   <body>
@@ -48,7 +53,7 @@
          <hr>
          <p>&nbsp I am motivated, I am always willing to learn and improve my knowledge in the world of programming and in my work. I am organized, sociable and have a good team spirit. I have a preference in the frontend area and in design, it was always something that interested me and that I dedicated myself to learning on my own before entering higher education.</p>
         </div>
-        <div class="containerSocialMedia col-sm-3">
+        <div class="containerSocialMedia col-sm-4">
           <h4 class="SocialMediaTitle"><span class="number"><sup>02</sup></span> Social Media</h4>  
        <hr>
        <p><img src="assets/instagram.png" alt="">&nbsp<span class="socialMediaTags">  @goncalogtp</span></p>
@@ -58,17 +63,181 @@
       </div>
       </div>
        <div class="row">
-        <div class="containerProgSkills col-sm-5">
+        <div class="containerProgSkills col-sm-6">
             <h4 class="ProgSkillTitle"><span class="number"><sup>03</sup></span> Programmer Skills</h4>  
          <hr>
+         <canvas id="horizontalBarChartCanvas"></canvas>
+}
         </div> 
         <div class="containerDesigSkills col-sm-5">
             <h4 class="DesignerSkillTitle"><span class="number"><sup>04</sup></span> Designer Skills</h4>  
          <hr>
+         <canvas id="horizontalBarChartCanvas2"></canvas>
         </div>
+      </div> 
+      <div class="row">
+        <div class="containerProgSkills col-sm-11">
+            <h4 class="ProgSkillTitle"><span class="number"><sup>05</sup></span> Education</h4>  
+         <hr>
+        </div> 
       </div> 
     </div>
 
+    <script>
+      
+      //programmingskills
+
+var horizontalBarChart = new Chart(horizontalBarChartCanvas, {
+   type: 'horizontalBar',
+   data: {
+      labels: ["C#", "Java", "Node.js", "Three.js","Unity", "Javascript", "VUE", "CSS", "HTML"],
+      datasets: [{
+         data: [2000, 4000, 5500, 5500, 6000, 6500, 7000, 8500, 9000],
+         backgroundColor: ["white", "white","white", "white", "white", "white", "white", "white", "white"], 
+      }]
+   },
+   options: {
+      tooltips: {
+        enabled: false
+      },
+      responsive: true,
+      legend: {
+         display: false,
+         position: 'bottom',
+         fullWidth: true,
+         labels: {
+           boxWidth: 10,
+           padding: 50
+         }
+      },
+      scales: {
+         yAxes: [{
+           barPercentage: 0.75,
+           gridLines: {
+             display: true,
+             drawTicks: true,
+             drawOnChartArea: false
+           },
+           ticks: {
+             fontColor: 'white',
+             fontFamily: 'Hind Vadodara',
+             fontSize: 11
+           }
+            
+         }],
+         xAxes: [{
+             gridLines: {
+               display: true,
+               drawTicks: false,
+               tickMarkLength: 5,
+               drawBorder: false
+             },
+           ticks: {
+             padding: 5,
+             beginAtZero: true,
+             fontColor: 'white',
+             fontFamily: 'Hind Vadodara',
+             fontSize: 11,
+             callback: function(label, index, labels) {
+              return label/1000;
+             }
+               
+           },
+            scaleLabel: {
+              display: true,
+              padding: 10,
+              fontFamily: 'Hind Vadodara',
+              fontColor: 'white',
+              fontSize: 16,
+              fontStyle: 700,
+              labelString: ''
+            },
+           
+         }]
+      }
+   }
+});
+
+//designerskills
+
+var horizontalBarChart2 = new Chart(horizontalBarChartCanvas2, {
+   type: 'horizontalBar',
+   data: {
+      labels: ["Illustrator","Canva", "After Effects", "Adobe Premier", "AdobeXD", "Photoshop"],
+      datasets: [{
+         data: [5000,6000, 7000, 8500, 10000, 10000],
+         backgroundColor: ["white", "white","white", "white", "white", "white", "white", "white", "white"], 
+      }]
+   },
+   options: {
+      tooltips: {
+        enabled: false
+      },
+      responsive: true,
+      legend: {
+         display: false,
+         position: 'bottom',
+         fullWidth: true,
+         labels: {
+           boxWidth: 10,
+           padding: 50
+         }
+      },
+      scales: {
+         yAxes: [{
+           barPercentage: 0.75,
+           gridLines: {
+             display: true,
+             drawTicks: true,
+             drawOnChartArea: false
+           },
+           ticks: {
+             fontColor: 'white',
+             fontFamily: 'Hind Vadodara',
+             fontSize: 11
+           }
+            
+         }],
+         xAxes: [{
+             gridLines: {
+               display: true,
+               drawTicks: false,
+               tickMarkLength: 5,
+               drawBorder: false
+             },
+           ticks: {
+             padding: 5,
+             beginAtZero: true,
+             fontColor: 'white',
+             fontFamily: 'Hind Vadodara',
+             fontSize: 11,
+             callback: function(label, index, labels) {
+              return label/1000;
+             }
+               
+           },
+            scaleLabel: {
+              display: true,
+              padding: 10,
+              fontFamily: 'Hind Vadodara',
+              fontColor: 'white',
+              fontSize: 16,
+              fontStyle: 700,
+              labelString: ''
+            },
+           
+         }]
+      }
+   }
+});
+
+
+
+    </script>
+
+
+
+   
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
