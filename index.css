@@ -12,6 +12,18 @@ hr{
     background-color: white;
 }
 
+p{
+    color: white;
+    
+}
+
+.socialMediaTags{
+    color: rgba(245, 244, 244, 0.568);
+    font-size:20px;
+    font-family: 'Hind Vadodara', sans-serif;
+    
+}
+
 .number{
     font-family: 'Hind Vadodara', sans-serif;
     font-size:18px;
@@ -24,9 +36,24 @@ hr{
 
 }
 
-.containerSkills{
+.containerProgSkills{
     margin-left: 30px;
     margin-top:50px;
+}
+
+.containerDesigSkills{
+    margin-top:50px;
+    margin-right: 30px;
+}
+
+.containerAboutMe{
+    margin-left: 30px;
+    margin-top:50px;
+}
+
+.containerSocialMedia{
+    margin-top:50px;
+    margin-right: 30px;
 }
 
 
