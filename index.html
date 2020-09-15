@@ -25,12 +25,15 @@
     />
      <!-- Resources -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-
+     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.js" crossorigin="anonymous"></script>
+     
 
      
     <title>Curriculo</title>
   </head>
   <body>
+    <div class="se-pre-con"></div>
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-8 containerTitle">
@@ -51,7 +54,7 @@
         <div class="containerAboutMe col-sm-7">
             <h4 class="AboutMeTitle"><span class="number"><sup>01</sup></span> About me</h4>  
          <hr>
-         <p>&nbsp I am motivated, I am always willing to learn and improve my knowledge in the world of programming and in my work. I am organized, sociable and have a good team spirit. I have a preference in the frontend area and in design, it was always something that interested me and that I dedicated myself to learning on my own before entering higher education.</p>
+         <p>&nbsp I am motivated, I am always willing to learn and improve my knowledge in the world of programming and in my work. I am organized, sociable and have a good team spirit. I have a preference in the frontend area, in design and virtual reality, it was always something that interested me and that I dedicated myself to learning on my own before entering higher education.</p>
         </div>
         <div class="containerSocialMedia col-sm-4">
           <h4 class="SocialMediaTitle"><span class="number"><sup>02</sup></span> Social Media</h4>  
@@ -135,10 +138,13 @@
     <footer>
       <p>© Designed by <span>Gonçalo Perdigão</span>
       </footer>
-   
+      
    
    <script>
-      
+      $(window).on('load', (function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");
+	}));
       //programmingskills
 
 var horizontalBarChart = new Chart(horizontalBarChartCanvas, {
@@ -292,16 +298,7 @@ var horizontalBarChart2 = new Chart(horizontalBarChartCanvas2, {
 
 
    
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
+    
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
