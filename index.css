@@ -56,6 +56,15 @@ p{
     margin-right: 30px;
 }
 
+.containerEducation{
+    margin-left: 30px;
+    margin-top:50px;
+}
+
+.containerProjects{
+    margin-top:50px;
+    margin-right: 30px;
+}
 
 .row{
     width: 100%;
@@ -151,3 +160,37 @@ p{
       left: 0.5%;
     }
   }
+
+
+
+  /* table education/projects */
+  
+  #education, #projects {
+    font-family: 'Hind Vadodara', sans-serif; 
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #education td{
+    border: none;
+    padding: 5px;
+    color:white;
+    font-family: 'Hind Vadodara', sans-serif;
+   
+    
+  }
+
+  #projects td{
+    border: none;
+    padding: 8px;
+    color:white;
+    font-family: 'Hind Vadodara', sans-serif;
+  }
+  
+  .educationDesc, .projectDesc{
+      color: #cacacabd;
+      font-family: 'Hind Vadodara', sans-serif;
+  }
+
+
+ 

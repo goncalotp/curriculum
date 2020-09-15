@@ -76,12 +76,61 @@
         </div>
       </div> 
       <div class="row">
-        <div class="containerProgSkills col-sm-11">
-            <h4 class="ProgSkillTitle"><span class="number"><sup>05</sup></span> Education</h4>  
+        <div class="containerEducation col-sm-6">
+            <h4 class="EducationTitle"><span class="number"><sup>05</sup></span> Education</h4>  
          <hr>
+         <table id="education">
+          <tr>
+            <td>2013-2014</td>
+            <td>ISEP</td>
+            <td><span class="educationDesc">Zero Year</span></td>
+          </tr>
+          <tr>
+            <td>2016-2020</td>
+            <td>ESMAD</td>
+            <td><span class="educationDesc">Degree in Information Systems and Technologies for the Web</span></td>
+          </tr>
+          <tr>
+            <td>2020-2020</td>
+            <td>TAW Software</td>
+            <td><span class="educationDesc">Front-end Developer</span></td>
+          </tr>
+        </table>
         </div> 
+        <div class="containerProjects col-sm-5">
+          <h4 class="ProjectsTitle"><span class="number"><sup>06</sup></span> Principal Projects</h4>  
+       <hr>
+       <table id="projects">
+        <tr>
+          <td>2017</td>
+          <td>Boats</td>
+          <td><span class="projectDesc">Mini boat game made with <i>Three.js</i></span></td>
+        </tr>
+        <tr>
+          <td>2018</td>
+          <td>FBooks</td>
+          <td><span class="projectDesc">Project to borrow and request books. Made with <i>HTML, Javascript</i> and <i>CSS</i>.</span></td>
+        </tr>
+        <tr>
+          <td>2019</td>
+          <td>ACIES</td>
+          <td><span class="projectDesc">Project to count the number of people in line at the school cafeteria. Made with <i>Vue.js</i></span></td>
+        </tr>
+        <tr>
+          <td>2019</td>
+          <td>beatbud</td>
+          <td><span class="projectDesc">Android app, whice allows the user to search for people with the same music taste. Developed in <i>Android Studio</i> with <i>Java</i> and <i>Google's Firebase</i>.</span></td>
+        </tr>
+        <tr>
+          <td>2020</td>
+          <td>Wineyard</td>
+          <td><span class="projectDesc">Application to create routes in the Douro vineyards. Made with <i>Vue.js</i> and <i>Google Maps API</i> .</span></td> 
+        </tr>
+      </table>
+      </div> 
       </div> 
     </div>
+    <br>
 
     <script>
       
@@ -112,7 +161,7 @@ var horizontalBarChart = new Chart(horizontalBarChartCanvas, {
       },
       scales: {
          yAxes: [{
-           barPercentage: 0.75,
+           barPercentage: 0.50,
            gridLines: {
              display: true,
              drawTicks: true,
@@ -185,7 +234,7 @@ var horizontalBarChart2 = new Chart(horizontalBarChartCanvas2, {
       },
       scales: {
          yAxes: [{
-           barPercentage: 0.75,
+           barPercentage: 0.50,
            gridLines: {
              display: true,
              drawTicks: true,
