@@ -17,6 +17,19 @@ p{
     
 }
 
+a:hover{
+    color: white;
+}
+
+footer{
+    display:fixed;
+    color:white;
+    font-family: 'Hind Vadodara', sans-serif;
+    margin-bottom:1px;
+    text-align:center;
+    margin-top: 20px;
+}
+
 .socialMediaTags{
     color: rgba(245, 244, 244, 0.568);
     font-size:20px;
