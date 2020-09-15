@@ -141,7 +141,7 @@ p{
   }
 
 
-  @-webkit-keyframes floatText{
+  @keyframes floatText{
     from {
       left: -50%;
     }
