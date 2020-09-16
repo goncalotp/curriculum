@@ -46,8 +46,62 @@ footer{
 .container-fluid {
     width:100%;
     margin-top: 70px;
-
+    animation: fadeIn ease 5s ;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+    animation-fill-mode: forwards;
+    
 }
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+  
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  110% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+
+
 
 .containerProgSkills{
     margin-left: 30px;
@@ -104,7 +158,7 @@ footer{
 }
 .containerTitle{
     margin-left: 30px;
-    animation: floatText 1s alternate ease-in-out
+    animation: floatText 2s alternate ease-in-out
 }
 
 .professionalTitle{
@@ -132,39 +186,48 @@ footer{
  
 
 /* overlay profilepic*/
-  .overlay {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    background-color: #262b2f;
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    transition: .5s ease;
-  }
-   
-  .containerProfilePic:hover .overlay {
-    bottom: 0;
-    height: 100%;
-    width: 100%;
-  }
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #262b2f;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+ 
+.containerProfilePic:hover .overlay {
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
 
-  .textOverlay {
-    white-space: nowrap; 
-    color: white;
-    font-size: 50px;
-    text-align: center;
-    position: absolute;
-    overflow: hidden;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    font-family: 'Hind Vadodara', sans-serif;
+.textOverlay {
+  white-space: nowrap; 
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-family: 'Hind Vadodara', sans-serif;
+}
+
+  @keyframes floatText{
+    from {
+      left: -50%;
+    }
+  
+    to {
+      /* left: auto; */
+      left: 0.5%;
+    }
   }
-
-
 
   canvas#horizontalBarChart, canvas#horizontalBarChart2 {
     width: 1000px;
@@ -217,18 +280,71 @@ footer{
 
 
  /* loading */
- .no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-.se-pre-con {
+ 
+.loading {
 	position: fixed;
-	left: 0px;
+	left: 600px;
 	top: 0px;
-	width: 100%;
-	height: 100%;
+	width: 30%;
+	height: 30%;
 	z-index: 9999;
-	background: url("assets/3.gif") center no-repeat #262b2f;
+  background: url("assets/logoGP.gif") center no-repeat  transparent;
+  background-repeat: no-repeat;
+  animation: fadeOut ease 5s ;
+  -webkit-animation: fadeOut ease 5s;
+  -moz-animation: fadeOut ease 5s;
+  -o-animation: fadeOut ease 5s;
+  -ms-animation: fadeOut ease 5s;
+  animation-fill-mode: forwards;
+
 }
 
+
+
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+}
+}
 
 /* scrollbar */
 /* width */
