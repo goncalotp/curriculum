@@ -262,11 +262,13 @@ footer{
     padding: 5px;
     color:white;
     font-family: 'Hind Vadodara', sans-serif;
+  
    
     
   }
 
   #projects td{
+    vertical-align: top;
     border: none;
     padding: 8px;
     color:white;
